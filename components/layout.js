@@ -29,7 +29,7 @@ export default function Layout({ children, currentPage }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      {/* Render nav bar everywhere */}
+      {/* Render nav bar everywhere, added z-index to make it appear on top of hotel images*/}
       <OffcanvasExample/>
 
       {/* Render contents of children here */}
