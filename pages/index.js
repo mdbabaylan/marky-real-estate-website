@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import React, { useState } from 'react';
+import BookNowButton from '../components/book-now-modal';
+import {HomeFilled} from '@ant-design/icons';
 
 const mainPageStyle = {
   position: "relative",
@@ -41,12 +43,14 @@ export default function Home() {
            backgroundColor: "rgba(70, 70, 70, 0)", 
            position:"absolute", 
            left:"3%", top:"42%",
-           fontSize: "2rem"
+           fontSize: "1.8rem"
           }
           }>Affordable Comfort</p>
          {/* <Button variant="primary" style={{fontWeight:"bold", position:"absolute", left:"3%", top:"50%"}} onClick={handleShow}>Book Now</Button>{' '} */}
-         <Button variant="primary" style={{fontWeight:"bold", position:"absolute", left:"3%", top:"50%"}}>Book Now</Button>{' '}
+         {/* <Button variant="primary" style={{fontWeight:"bold", position:"absolute", left:"3%", top:"50%"}}>Book Now</Button>{' '} */}
+         <BookNowButton/>
       </div>
+      <h6 style={{backgroundColor: "#fcfcfc", padding: "8px"}}><HomeFilled style={{padding:"5px", marginBottom: "2px"}}/>San Francisco Street, Barugo, Leyte</h6>
       <div style={{paddingBottom: "45%", position: "relative"}}>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.50694987166472!2d124.73614599593404!3d11.326582348201534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33080fc0d0edc32d%3A0x2d4f5e0dd54ae5ab!2sBarly%20Real%20Estate!5e0!3m2!1sen!2sph!4v1687614284745!5m2!1sen!2sph"
           style={{
@@ -58,21 +62,6 @@ export default function Home() {
           }}>  
         </iframe>
       </div>
-
-      {/* <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal> */}
 
     </Layout>
   );

@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import OffcanvasExample from './bootstrap-nav-bar';
 
-export const siteTitle = 'Marky Real Estate';
+export const siteTitle = 'Barly Real Estate';
 
 export default function Layout({ children, currentPage }) {
   return (
