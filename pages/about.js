@@ -9,7 +9,6 @@ export default function About() {
   return (<Layout>
   <Head>
     <title>About - {siteTitle}</title>
-    <link rel="icon" href="/favicon.ico" />
   </Head>
   <h1>About</h1>
   <Image 
@@ -19,5 +18,7 @@ export default function About() {
     alt="Home Page Image" 
     loading="lazy" />
     </Layout>);
+
+    //short paragraph about Barly Real Estate, when it was made, how it contributes ()
   
 }
