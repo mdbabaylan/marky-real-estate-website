@@ -48,7 +48,7 @@ export default function Home() {
           }>Affordable Comfort</p>
          {/* <Button variant="primary" style={{fontWeight:"bold", position:"absolute", left:"3%", top:"50%"}} onClick={handleShow}>Book Now</Button>{' '} */}
          {/* <Button variant="primary" style={{fontWeight:"bold", position:"absolute", left:"3%", top:"50%"}}>Book Now</Button>{' '} */}
-         <BookNowButton/>
+         <BookNowButton layoutName={"index"}/>
       </div>
       <h6 style={{backgroundColor: "#fcfcfc", padding: "8px"}}><HomeFilled style={{padding:"5px", marginBottom: "2px"}}/>San Francisco Street, Barugo, Leyte</h6>
       <div style={{paddingBottom: "45%", position: "relative"}}>

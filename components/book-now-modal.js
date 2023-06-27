@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {PhoneTwoTone} from '@ant-design/icons';
 
-function BookNowButton() {
+function BookNowButton({layoutName}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,9 +11,13 @@ function BookNowButton() {
 
   return (
     <>
-      <Button variant="success" onClick={handleShow} style={{fontFamily:"DMSans", position:"absolute", left:"3%", top:"50%"}}>
+    {/* use position absolute for index js, position relative for other layouts that will re-use this button (aka normal layout positioning) */}
+    {(layoutName == "index" ? <Button variant="success" onClick={handleShow} style={{fontFamily:"DMSans", position:"absolute", left:"3%", top:"50%"}}>
         Book Now
-      </Button>
+      </Button>: <Button style={{fontFamily:"DMSans", display: "flex", justifyContent: "center"}}  variant="success" onClick={handleShow}>
+        Book Now
+      </Button>)}
+
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
