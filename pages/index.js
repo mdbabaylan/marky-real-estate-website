@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import Image from 'next/Image';
+import Image from 'next/image';
 import React from 'react';
 import BookNowButton from '../components/book-now-modal';
 import {HomeFilled} from '@ant-design/icons';
