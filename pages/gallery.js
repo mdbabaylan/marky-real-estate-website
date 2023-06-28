@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/Image';
 import Layout, { siteTitle } from '../components/layout';
 //import ImageCarousel from '../components/image-carousel';
 import ImageGrid from '../components/image-grid';

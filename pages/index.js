@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import Image from 'next/image';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import React, { useState } from 'react';
+import Image from 'next/Image';
+import React from 'react';
 import BookNowButton from '../components/book-now-modal';
 import {HomeFilled} from '@ant-design/icons';
 
