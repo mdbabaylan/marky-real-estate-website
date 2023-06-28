@@ -14,7 +14,7 @@ function BookNowButton({layoutName}) {
     {/* use position absolute for index js, position relative for other layouts that will re-use this button (aka normal layout positioning) */}
     {(layoutName == "index" ? <Button variant="success" onClick={handleShow} style={{fontFamily:"DMSans", position:"absolute", left:"3%", top:"50%"}}>
         Book Now
-      </Button>: <Button style={{fontFamily:"DMSans", display: "flex", justifyContent: "center"}}  variant="success" onClick={handleShow}>
+      </Button>: <Button style={{fontFamily:"DMSans", display: "flex", justifyContent: "center", margin: "0 auto"}}  variant="success" onClick={handleShow}>
         Book Now
       </Button>)}
 

@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import BookNowButton from '../components/book-now-modal';
+import Image from 'react-bootstrap/Image';
 //<Link> -- client side rendering, no browser refresh, quick
 //a href = for external pages (pages not within your project)
 
@@ -13,12 +14,13 @@ export default function About() {
   <Head>
     <title>About - {siteTitle}</title>
   </Head>
-  <Container style={{backgroundColor: "#f8f9fa"}}>
+  <Container fluid={true} style={{backgroundImage: "url(/about-adjusted.png", backgroundSize: "cover"}}>
       <Row>
+        <Image style={{marginBottom: "20px"}} src="/about-adjusted.png" fluid/>
         <Col sm={12} md ={12}><h4 style={{fontFamily: "Prata"}}>About:</h4></Col>
         <Col sm={12} md ={6}>
           <p style={{fontFamily: "DMSans"}}>Affordable rooms right in the heart of Barugo, Leyte</p>
-          <ul style={{fontFamily: "DMSans", padding: "1em"}}>
+          <ul style={{fontFamily: "DMSans", padding: "1em", listStyleType: "disc"}}>
             <li>Transient rooms</li>
             <li>Mid to long term rentals</li>
          </ul>
@@ -36,7 +38,7 @@ export default function About() {
          </ul>
         </Col>
       </Row>
-      <Col sm={12}><BookNowButton layoutName={"about"}/></Col>
+      <Col sm={12} style={{marginBottom: "20px"}}><BookNowButton layoutName={"about"}/></Col>
 
     </Container>
     </Layout>);
