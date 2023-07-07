@@ -13,7 +13,7 @@ export default function Layout({ children, currentPage }) {
   return (
     <div className={styles.container}>
       <Head>
-       <link rel="icon" href="/bre.ico" />
+       <link rel="icon" href="/bre-logo-v1-.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"

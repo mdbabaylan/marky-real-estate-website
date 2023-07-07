@@ -12,9 +12,17 @@ function OffcanvasExample() {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3" style={{zIndex: 100}} sticky='top'>
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-5" style={{zIndex: 100}} sticky='top'>
           <Container fluid>
-            <Navbar.Brand style={{fontFamily:"DMSans", fontWeight:"bold"}} href="#">Barly Real Estate</Navbar.Brand>
+            <Navbar.Brand href="/">
+            <img
+              alt=""
+              src="/bre-logo-v1-.ico"
+              width="35"
+              height="35"
+              className="d-inline-block align-top"
+            />{' '}Barly RE</Navbar.Brand>
+            {/* <Navbar.Brand style={{fontFamily:"DMSans", fontWeight:"bold"}} href="#">Barly Real Estate</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -29,7 +37,7 @@ function OffcanvasExample() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link className="next-navbar-link"  href="/">Home</Link>
-                  <Link className="next-navbar-link"  href="/about">About</Link>
+                  {/* <Link className="next-navbar-link"  href="/about">About</Link> */}
                   <Link className="next-navbar-link"  href="/gallery">Gallery</Link>
                 </Nav>
               </Offcanvas.Body>

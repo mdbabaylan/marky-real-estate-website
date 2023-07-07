@@ -16,7 +16,7 @@ export default function About() {
   </Head>
   <Container fluid={true} style={{backgroundImage: "url(/about-adjusted.png", backgroundSize: "cover"}}>
       <Row>
-        <Image style={{marginBottom: "20px"}} src="/about-adjusted.png" fluid/>
+        <Image style={{marginBottom: "30px", maxHeight: "600px"}} src="/about-adjusted.png" fluid/>
         <Col sm={12} md ={12}><h4 style={{fontFamily: "Prata"}}>About:</h4></Col>
         <Col sm={12} md ={6}>
           <p style={{fontFamily: "DMSans"}}>Affordable rooms right in the heart of Barugo, Leyte</p>
